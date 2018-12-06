@@ -7,7 +7,7 @@ CREATE TABLE messages (
   messages will have  {user, message , room}
   user will be linked to another table user
   room will link to another table room */
-  id INT,
+  id INT NOT NULL AUTO_INCREMENT,
   user VARCHAR(50),
   text TEXT,
   room VARCHAR(20),
@@ -27,16 +27,16 @@ CREATE TABLE messages (
 --   name VARCHAR(50),
 --   PRIMARY KEY(id)
   
--- );
--- CREATE TABLE User (
---   /* Describe your table here.
---   messages will have  {user, message , room}
---   user will be linked to another table user
---   room will link to another table room */
---   id INT,
---   name VARCHAR(50),
---   PRIMARY KEY(id)
--- );
+
+CREATE TABLE User (
+  /* Describe your table here.
+  messages will have  {user, message , room}
+  user will be linked to another table user
+  room will link to another table room */
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(50),
+  PRIMARY KEY(id)
+);
 
 /* Create other tables and define schemas for them here! */
 
