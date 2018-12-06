@@ -4,11 +4,11 @@ module.exports = {
   messages: {
     get: function () {}, // a function which produces all the messages
     post: function (data) {
-      db.query(`INSERT INTO messages(user,text,room)VALUES('${data.username}','${data.message}','${data.roomname}')`,(err,result)=>{
+      db.query(`INSERT INTO messages(user,text,room)VALUES("${data.username}","${data.message}","${data.roomname}")`,(err,result)=>{
         if(err){
           throw err
         }else {
-          console.log('something happened')
+          console.log('Message Posted!')
         }
       })
     }
@@ -23,7 +23,7 @@ module.exports = {
         if(err){
           throw err
         }else {
-          console.log('result:', result);
+          console.log('User Added!');
         }
       })
     }

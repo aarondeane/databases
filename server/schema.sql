@@ -1,8 +1,8 @@
-CREATE DATABASE chat;
+CREATE DATABASE Chat;
 
-USE chat;
+USE Chat;
 
-CREATE TABLE messages (
+CREATE TABLE Messages (
   /* Describe your table here.
   messages will have  {user, message , room}
   user will be linked to another table user
